@@ -1,21 +1,5 @@
-*   Hello
+# linter-markdown
 
-# linter-markdown package
+This package will be used to validate your markdown files using [mdast-lint](https://github.com/wooorm/mdast-lint).
 
-A short description of your package.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
-
-*   Hello
-
-**stronk**
-
-_emphasis_
-
-*   World
-
-## Hello
-
-### Hello 2
-
-sadasd
+You may find information about mdast-lint configuration [here](https://github.com/wooorm/mdast-lint#configuring-mdast-lint)
