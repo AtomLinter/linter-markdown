@@ -1,0 +1,24 @@
+{
+  "name": "linter-markdown",
+  "main": "./lib/init",
+  "version": "0.0.1",
+  "description": "Lint markdown on the fly, using mdast-lint",
+  "keywords": [],
+  "activationCommands": {},
+  "repository": "https://github.com/leipert/linter-markdown",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "mdast": "~0.28.0",
+    "mdast-lint": "~0.4.2"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
