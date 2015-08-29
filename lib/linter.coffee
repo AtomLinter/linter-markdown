@@ -15,8 +15,14 @@ getRange = (range) ->
 
 Configuration = require '../node_modules/mdast/lib/cli/configuration.js'
 
-fin = new Configuration {detectRC: true}
-
+errorLoadingConfig = (error, filePath) ->
+  return new Promise (resolve, reject) ->
+    resolve [{
+      type: 'Error'
+      text: error.message
+      filePath: filePath
+      range: [[0,0],[0,0]]
+    }]
 
 module.exports = new class # This only needs to be a class to bind lint()
 
@@ -30,17 +36,6 @@ module.exports = new class # This only needs to be a class to bind lint()
     TextBuffer = TextEditor.getBuffer()
     filePath = TextEditor.getPath()
     if filePath
-      # Lazy loading required plugins
-      mdast ?= require 'mdast'
-      lint ?= require 'mdast-lint'
-
-      # Load .mdastrc config for current file
-      conf = fin.getConfiguration filePath
-
-      # Load processor for current path
-      processor = mdast().use(lint, conf.plugins.lint)
-
-      source = TextEditor.getText()
 
       # Transform function needs to be created here
       # as we need the filePath in the errorMessage
@@ -51,6 +46,24 @@ module.exports = new class # This only needs to be a class to bind lint()
           filePath: filePath
           range: getRange message.name
         }
+
+      # Lazy loading required plugins
+      mdast ?= require 'mdast'
+      lint ?= require 'mdast-lint'
+
+      # Load .mdastrc config for current file
+      # TODO: Instead of constructing a configuration every time,
+      # we should maybe watch .mdastrc files. But file watching
+      # with atom can be a PIA, so we do not that right now
+      try
+        fin = new Configuration {detectRC: true}
+        conf = fin.getConfiguration filePath
+      catch e then return errorLoadingConfig(e, filePath)
+
+      # Load processor for current path
+      processor = mdast().use(lint, conf.plugins.lint)
+
+      source = TextEditor.getText()
 
       new Promise (resolve, reject) ->
         processor.process source, conf.settings, (err, res, file) ->
