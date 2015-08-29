@@ -11,8 +11,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "mdast": "~0.28.0",
-    "mdast-lint": "~0.4.2"
+    "mdast": "~1.1.0",
+    "mdast-lint": "~1.0.0"
   },
   "providedServices": {
     "linter": {
