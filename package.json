@@ -1,7 +1,7 @@
 {
   "name": "linter-markdown",
   "main": "./lib/init",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Lint markdown on the fly, using mdast-lint",
   "keywords": [],
   "activationCommands": {},
