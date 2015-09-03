@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/AtomLinter/linter-markdown/tree/HEAD)
-
-[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.0...HEAD)
+## [v1.2.1](https://github.com/AtomLinter/linter-markdown/tree/v1.2.1) (2015-09-03)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.0...v1.2.1)
 
 **Closed issues:**
 
