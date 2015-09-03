@@ -5,7 +5,7 @@
   "description": "Lint markdown on the fly, using mdast-lint",
   "keywords": [],
   "activationCommands": {},
-  "repository": "https://github.com/leipert/linter-markdown",
+  "repository": "https://github.com/AtomLinter/linter-markdown",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
