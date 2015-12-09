@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "lint": {
+        "maximum-line-length": false
+    }
+  },
+  "settings": {
+    "commonmark": true
+  }
+}

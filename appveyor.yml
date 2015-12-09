@@ -15,6 +15,6 @@ build_script:
   - SET PATH=%LOCALAPPDATA%\atom\bin;%PATH%
   - apm clean
   - apm install
-  # TODO: add specs (#13)
   - npm test
+  # TODO: add specs (#13)
   #- apm test
