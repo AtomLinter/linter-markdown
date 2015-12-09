@@ -25,8 +25,8 @@ errorLoadingConfig = (error, filePath) ->
     }]
 
 module.exports = new class # This only needs to be a class to bind lint()
-
   grammarScopes: ['source.gfm', 'source.pfm', 'text.md']
+  name: "mdast-lint"
   scope: "file"
   lintOnFly: true
 
