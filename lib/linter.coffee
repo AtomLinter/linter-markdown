@@ -51,21 +51,21 @@ module.exports = new class # This only needs to be a class to bind lint()
       mdast ?= require 'mdast'
       lint ?= require 'mdast-lint'
 
-      # Load .mdastrc config for current file
-      # TODO: Instead of constructing a configuration every time,
-      # we should maybe watch .mdastrc files. But file watching
-      # with atom can be a PIA, so we do not that right now
-      try
-        fin = new Configuration {detectRC: true}
-        conf = fin.getConfiguration filePath
-      catch e then return errorLoadingConfig(e, filePath)
-
-      # Load processor for current path
-      processor = mdast().use(lint, conf.plugins.lint)
-
       source = TextEditor.getText()
 
       new Promise (resolve, reject) ->
-        processor.process source, conf.settings, (err, res, file) ->
-          reject(err) if err
-          resolve(res.messages.map(transform))
+        # Load .mdastrc config for current file
+        # TODO: Instead of constructing a configuration every time,
+        # we should maybe watch .mdastrc files. But file watching
+        # with atom can be a PIA, so we do not that right now
+        fin = new Configuration {detectRC: true}
+        conf = fin.getConfiguration filePath, (err, conf) ->
+          if err
+            errorLoadingConfig(e, filePath).then(resolve, reject);
+            return
+
+          # Load processor for current path
+          processor = mdast().use(lint, conf.plugins.lint)
+          processor.process source, conf.settings, (err, res, file) ->
+            reject(err) if err
+            resolve(res.messages.map(transform))
