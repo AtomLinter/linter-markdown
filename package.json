@@ -3,6 +3,9 @@
   "main": "./lib/init",
   "version": "1.2.3",
   "description": "Lint markdown on the fly, using mdast-lint",
+  "scripts": {
+    "test": "echo 'no tests'"
+  },
   "keywords": [],
   "activationCommands": {},
   "repository": "https://github.com/AtomLinter/linter-markdown",
