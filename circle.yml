@@ -11,6 +11,8 @@ dependencies:
     - atom -v
     - apm -v
     - apm install
-# test:
+test:
+  pre:
+    - npm run lint
 #   post:
     #- apm test  # TODO: add specs (#13)

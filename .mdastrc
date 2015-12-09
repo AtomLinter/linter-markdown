@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "lint": {
+    }
+  },
+  "settings": {
+    "commonmark": true
+  }
+}

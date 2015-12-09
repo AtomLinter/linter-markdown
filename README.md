@@ -1,6 +1,7 @@
 # linter-markdown
 
-Lint markdown files utilizing [mdast-lint][mdast-lint] and the [linter][linter] package for atom.
+Lint markdown files utilizing [mdast-lint][mdast-lint] and the [linter][linter]
+package for atom.
 
 The linting is easily [configurable][configuration] with mdast-lint.
 
