@@ -1,5 +1,10 @@
 # Change Log
 
+## [v1.2.2](https://github.com/AtomLinter/linter-markdown/tree/v1.2.1) (2015-12-09)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.1...v1.2.2)
+
+* Updated `mdast` dependency to fix [\#8](https://github.com/AtomLinter/linter-markdown/issues/8)
+
 ## [v1.2.1](https://github.com/AtomLinter/linter-markdown/tree/v1.2.1) (2015-09-03)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.0...v1.2.1)
 
