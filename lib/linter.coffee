@@ -26,7 +26,7 @@ errorLoadingConfig = (error, filePath) ->
 
 module.exports = new class # This only needs to be a class to bind lint()
 
-  grammarScopes: ['source.gfm', 'source.pfm']
+  grammarScopes: ['source.gfm', 'source.pfm', 'text.md']
   scope: "file"
   lintOnFly: true
 
@@ -61,7 +61,7 @@ module.exports = new class # This only needs to be a class to bind lint()
         fin = new Configuration {detectRC: true}
         conf = fin.getConfiguration filePath, (err, conf) ->
           if err
-            errorLoadingConfig(e, filePath).then(resolve, reject);
+            errorLoadingConfig(e, filePath).then(resolve, reject)
             return
 
           # Load processor for current path
