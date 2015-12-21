@@ -4,6 +4,7 @@
   "version": "1.2.4",
   "description": "Lint markdown on the fly, using mdast-lint",
   "scripts": {
+    "lint": "mdast -u mdast-lint README.md LICENSE.md",
     "test": "echo 'no tests'"
   },
   "keywords": [],
@@ -11,11 +12,11 @@
   "repository": "https://github.com/AtomLinter/linter-markdown",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "^1.0.0"
   },
   "dependencies": {
-    "mdast": "~2.3.0",
-    "mdast-lint": "~1.1.0"
+    "mdast": "^2.3.0",
+    "mdast-lint": "^1.1.0"
   },
   "providedServices": {
     "linter": {

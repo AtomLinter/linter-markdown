@@ -9,5 +9,5 @@ notifications:
     on_failure: change
 os: osx
 
-script: npm install && npm test
+script: npm install && npm run lint
 # script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh' # TODO: add specs (#13)
