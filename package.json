@@ -15,7 +15,7 @@
     "atom": "^1.0.0"
   },
   "dependencies": {
-    "mdast": "^2.3.0",
+    "mdast": "^3.0.0",
     "mdast-lint": "^1.1.0"
   },
   "providedServices": {
