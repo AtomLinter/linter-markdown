@@ -2,9 +2,9 @@
   "name": "linter-markdown",
   "main": "./lib/init",
   "version": "1.2.4",
-  "description": "Lint markdown on the fly, using mdast-lint",
+  "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
-    "lint": "mdast -u mdast-lint README.md LICENSE.md",
+    "lint": "remark -u remark-lint README.md LICENSE.md",
     "test": "echo 'no tests'"
   },
   "keywords": [],
@@ -15,8 +15,8 @@
     "atom": "^1.0.0"
   },
   "dependencies": {
-    "mdast": "^2.3.0",
-    "mdast-lint": "^1.1.0"
+    "remark": "^3.0.0",
+    "remark-lint": "^2.0.0"
   },
   "providedServices": {
     "linter": {

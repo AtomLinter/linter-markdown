@@ -9,16 +9,16 @@
 [![Plugin installs!](https://img.shields.io/apm/dm/linter-markdown.svg)](https://atom.io/packages/linter-markdown)
 [![Package version!](https://img.shields.io/apm/v/linter-markdown.svg?style=flat)](https://atom.io/packages/linter-markdown)
 
-Lint markdown files utilizing [mdast-lint][mdast-lint] and the [linter][linter] package for atom.
+Lint markdown files utilizing [remark-lint][remark-lint] and the [linter][linter] package for atom.
 
-The linting is easily [configurable][configuration] with mdast-lint.
+The linting is easily [configurable][configuration] with remark-lint.
 
 We also maintain a [changelog][changelog] containing recent changes.
 
 ![Screenshot of linter-markdown in action][screenshot]
 
-[mdast-lint]: https://github.com/wooorm/mdast-lint
+[remark-lint]: https://github.com/wooorm/remark-lint
 [changelog]: https://github.com/AtomLinter/linter-markdown/blob/master/CHANGELOG.md
-[configuration]: https://github.com/wooorm/mdast-lint#configuring-mdast-lint
+[configuration]: https://github.com/wooorm/remark-lint#configuring-remark-lint
 [linter]: https://atom.io/packages/linter
 [screenshot]: https://raw.githubusercontent.com/AtomLinter/linter-markdown/master/assets/screenshot.png
