@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "mdast": "^2.3.0",
-    "mdast-lint": "^1.1.0"
+    "mdast-lint": "^2.0.0"
   },
   "providedServices": {
     "linter": {
