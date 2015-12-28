@@ -16,5 +16,6 @@ build_script:
   - apm clean
   - apm install
   - npm test
+  - ./node_modules/.bin/eslint ./
   # TODO: add specs (#13)
   #- apm test
