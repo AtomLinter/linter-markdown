@@ -1,7 +1,7 @@
 path = require('path')
 
 # Lazy loading these
-mdast = null
+remark = null
 lint = null
 
 getRange = (range) ->
@@ -13,7 +13,7 @@ getRange = (range) ->
   r[1][1] = m[2] * 1
   r
 
-Configuration = require '../node_modules/mdast/lib/cli/configuration.js'
+Configuration = require '../node_modules/remark/lib/cli/configuration.js'
 
 errorLoadingConfig = (error, filePath) ->
   return new Promise (resolve, reject) ->
@@ -26,7 +26,7 @@ errorLoadingConfig = (error, filePath) ->
 
 module.exports = new class # This only needs to be a class to bind lint()
   grammarScopes: ['source.gfm', 'source.pfm', 'text.md']
-  name: "mdast-lint"
+  name: "remark-lint"
   scope: "file"
   lintOnFly: true
 
@@ -48,15 +48,15 @@ module.exports = new class # This only needs to be a class to bind lint()
         }
 
       # Lazy loading required plugins
-      mdast ?= require 'mdast'
-      lint ?= require 'mdast-lint'
+      remark ?= require 'remark'
+      lint ?= require 'remark-lint'
 
       source = TextEditor.getText()
 
       new Promise (resolve, reject) ->
-        # Load .mdastrc config for current file
+        # Load .remarkrc config for current file
         # TODO: Instead of constructing a configuration every time,
-        # we should maybe watch .mdastrc files. But file watching
+        # we should maybe watch .remarkrc files. But file watching
         # with atom can be a PIA, so we do not that right now
         fin = new Configuration {detectRC: true}
         conf = fin.getConfiguration filePath, (err, conf) ->
@@ -65,7 +65,7 @@ module.exports = new class # This only needs to be a class to bind lint()
             return
 
           # Load processor for current path
-          processor = mdast().use(lint, conf.plugins.lint)
+          processor = remark().use(lint, conf.plugins.lint)
           processor.process source, conf.settings, (err, res, file) ->
             reject(err) if err
             resolve(res.messages.map(transform))
