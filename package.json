@@ -4,8 +4,7 @@
   "version": "1.2.4",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
-    "lint": "remark -u remark-lint README.md LICENSE.md",
-    "test": "echo 'no tests'"
+    "lint": "remark -u remark-lint README.md LICENSE.md"
   },
   "keywords": [],
   "activationCommands": {},
