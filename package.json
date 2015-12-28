@@ -18,6 +18,29 @@
     "remark": "^3.0.0",
     "remark-lint": "^2.0.0"
   },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "babel-eslint": "^4.1.6",
+    "eslint-config-airbnb": "^2.1.1"
+  },
+  "eslintConfig": {
+    "rules": {
+      "comma-dangle": [
+        2,
+        "never"
+      ],
+      "no-console": 0
+    },
+    "extends": "airbnb/base",
+    "parser": "babel-eslint",
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
   "providedServices": {
     "linter": {
       "versions": {
