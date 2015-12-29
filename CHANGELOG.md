@@ -1,9 +1,59 @@
 # Change Log
 
-## [v1.2.2](https://github.com/AtomLinter/linter-markdown/tree/v1.2.1) (2015-12-09)
+## [1.3.0](https://github.com/AtomLinter/linter-markdown/tree/1.3.0) (2015-12-29)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.4...1.3.0)
+
+**Closed issues:**
+
+- Add specs [\#13](https://github.com/AtomLinter/linter-markdown/issues/13)
+- Install `linter` automatically. [\#6](https://github.com/AtomLinter/linter-markdown/issues/6)
+
+**Merged pull requests:**
+
+- Add some repository configuration files [\#27](https://github.com/AtomLinter/linter-markdown/pull/27) ([Arcanemagus](https://github.com/Arcanemagus))
+- Automatically install linter [\#26](https://github.com/AtomLinter/linter-markdown/pull/26) ([Arcanemagus](https://github.com/Arcanemagus))
+- Fix the linter name [\#25](https://github.com/AtomLinter/linter-markdown/pull/25) ([Arcanemagus](https://github.com/Arcanemagus))
+- Add specs [\#24](https://github.com/AtomLinter/linter-markdown/pull/24) ([Arcanemagus](https://github.com/Arcanemagus))
+- Add lint config [\#23](https://github.com/AtomLinter/linter-markdown/pull/23) ([Arcanemagus](https://github.com/Arcanemagus))
+- Switch to js [\#21](https://github.com/AtomLinter/linter-markdown/pull/21) ([wooorm](https://github.com/wooorm))
+- Update remark [\#20](https://github.com/AtomLinter/linter-markdown/pull/20) ([wooorm](https://github.com/wooorm))
+- Add badges for CI, deps, and pkg info [\#17](https://github.com/AtomLinter/linter-markdown/pull/17) ([SpainTrain](https://github.com/SpainTrain))
+- Lint markdown files with mdast [\#16](https://github.com/AtomLinter/linter-markdown/pull/16) ([SpainTrain](https://github.com/SpainTrain))
+
+## [v1.2.4](https://github.com/AtomLinter/linter-markdown/tree/v1.2.4) (2015-12-10)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.3...v1.2.4)
+
+**Merged pull requests:**
+
+- Add linter name [\#15](https://github.com/AtomLinter/linter-markdown/pull/15) ([Arcanemagus](https://github.com/Arcanemagus))
+- Add CirclCI, TravisCI, and Appveyor configs [\#14](https://github.com/AtomLinter/linter-markdown/pull/14) ([SpainTrain](https://github.com/SpainTrain))
+- Add `text.md` scope [\#12](https://github.com/AtomLinter/linter-markdown/pull/12) ([SpainTrain](https://github.com/SpainTrain))
+
+## [v1.2.3](https://github.com/AtomLinter/linter-markdown/tree/v1.2.3) (2015-12-09)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.2...v1.2.3)
+
+**Fixed bugs:**
+
+- Uncaught TypeError: callback is not a function [\#10](https://github.com/AtomLinter/linter-markdown/issues/10)
+
+**Closed issues:**
+
+- Linting Entire Markdown File as Bash [\#7](https://github.com/AtomLinter/linter-markdown/issues/7)
+
+**Merged pull requests:**
+
+- Fix mdast update [\#11](https://github.com/AtomLinter/linter-markdown/pull/11) ([wooorm](https://github.com/wooorm))
+
+## [v1.2.2](https://github.com/AtomLinter/linter-markdown/tree/v1.2.2) (2015-12-09)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.1...v1.2.2)
 
-* Updated `mdast` dependency to fix [\#8](https://github.com/AtomLinter/linter-markdown/issues/8)
+**Closed issues:**
+
+- Update mdast [\#8](https://github.com/AtomLinter/linter-markdown/issues/8)
+
+**Merged pull requests:**
+
+- Update all dependencies 🌴 [\#9](https://github.com/AtomLinter/linter-markdown/pull/9) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 
 ## [v1.2.1](https://github.com/AtomLinter/linter-markdown/tree/v1.2.1) (2015-09-03)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.0...v1.2.1)
