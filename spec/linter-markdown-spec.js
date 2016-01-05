@@ -17,9 +17,10 @@ describe('The remark-lint provider for Linter', () => {
 
   describe('checks a file with issues and', () => {
     let editor = null;
+    const dciPath = path.join(__dirname, 'fixtures', 'definition-case-invalid.md');
     beforeEach(() => {
       waitsForPromise(() => {
-        return atom.workspace.open(path.join(__dirname, 'fixtures', 'definition-case-invalid.md')).then(openEditor => {
+        return atom.workspace.open(dciPath).then(openEditor => {
           editor = openEditor;
         });
       });
@@ -52,8 +53,9 @@ describe('The remark-lint provider for Linter', () => {
   });
 
   it('finds nothing wrong with a valid file', () => {
+    const dcvPath = path.join(__dirname, 'fixtures', 'definition-case-valid.md');
     waitsForPromise(() => {
-      return atom.workspace.open(path.join(__dirname, 'fixtures', 'definition-case-valid.md')).then(editor => {
+      return atom.workspace.open(dcvPath).then(editor => {
         return lint(editor).then(messages => {
           expect(messages.length).toEqual(0);
         });
