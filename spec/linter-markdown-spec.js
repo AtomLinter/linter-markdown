@@ -19,24 +19,22 @@ describe('The remark-lint provider for Linter', () => {
     let editor = null;
     const dciPath = path.join(__dirname, 'fixtures', 'definition-case-invalid.md');
     beforeEach(() => {
-      waitsForPromise(() => {
-        return atom.workspace.open(dciPath).then(openEditor => {
-          editor = openEditor;
-        });
-      });
+      waitsForPromise(() =>
+        atom.workspace.open(dciPath).then(openEditor => editor = openEditor)
+      );
     });
 
     it('finds at least one message', () => {
-      waitsForPromise(() => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toBeGreaterThan(0);
-        });
-      });
+      waitsForPromise(() =>
+        lint(editor).then(messages =>
+          expect(messages.length).toBeGreaterThan(0)
+        )
+      );
     });
 
     it('verifies the first message', () => {
-      waitsForPromise(() => {
-        return lint(editor).then(messages => {
+      waitsForPromise(() =>
+        lint(editor).then(messages => {
           expect(messages[0].type).toBeDefined();
           expect(messages[0].type).toEqual('Error');
           expect(messages[0].html).toBeDefined();
@@ -47,19 +45,19 @@ describe('The remark-lint provider for Linter', () => {
           expect(messages[0].range.length).toBeDefined();
           expect(messages[0].range.length).toEqual(2);
           expect(messages[0].range).toEqual([[2, 0], [2, 58]]);
-        });
-      });
+        })
+      );
     });
   });
 
   it('finds nothing wrong with a valid file', () => {
     const dcvPath = path.join(__dirname, 'fixtures', 'definition-case-valid.md');
-    waitsForPromise(() => {
-      return atom.workspace.open(dcvPath).then(editor => {
-        return lint(editor).then(messages => {
-          expect(messages.length).toEqual(0);
-        });
-      });
-    });
+    waitsForPromise(() =>
+      atom.workspace.open(dcvPath).then(editor =>
+        lint(editor).then(messages =>
+          expect(messages.length).toEqual(0)
+        )
+      )
+    );
   });
 });
