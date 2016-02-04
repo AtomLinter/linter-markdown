@@ -1,7 +1,7 @@
 {
   "plugins": {
     "lint": {
-        "maximum-line-length": false
+      "maximum-line-length": false
     }
   },
   "settings": {
