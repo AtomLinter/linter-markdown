@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.4.2](https://github.com/AtomLinter/linter-markdown/tree/v1.4.2) (2016-02-04)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.1...v1.4.2)
+
+- Update fixtures for `ruleId`s ([wooorm](https://github.com/wooorm))
+
 ## [1.4.1](https://github.com/AtomLinter/linter-markdown/tree/v1.4.1) (2016-02-04)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.0...v1.4.1)
 
