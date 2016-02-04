@@ -1,7 +1,12 @@
 # Change Log
 
-## [1.4.0](https://github.com/AtomLinter/linter-markdown/tree/v1.2.4) (2016-02-04)
-[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.3...v1.2.4)
+## [1.4.1](https://github.com/AtomLinter/linter-markdown/tree/v1.4.1) (2016-02-04)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.0...v1.4.1)
+
+- Fix linting error ([wooorm](https://github.com/wooorm))
+
+## [1.4.0](https://github.com/AtomLinter/linter-markdown/tree/v1.4.0) (2016-02-04)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.3.0...v1.4.0)
 
 - Add `ruleId`s to lint messages ([wooorm](https://github.com/wooorm))
 - Add support for `remark-lint` prefix in `.remarkrc` [\#29](https://github.com/AtomLinter/linter-markdown/pull/29) ([wooorm](https://github.com/wooorm))
