@@ -14,7 +14,7 @@
     "atom": "^1.0.0"
   },
   "dependencies": {
-    "remark": "^3.2.2",
+    "remark": "^4.0.0",
     "remark-lint": "^2.2.1",
     "atom-package-deps": "^3.0.7"
   },
