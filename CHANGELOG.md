@@ -1,23 +1,43 @@
 # Change Log
 
-## [1.4.2](https://github.com/AtomLinter/linter-markdown/tree/v1.4.2) (2016-02-04)
+## [1.5.0](https://github.com/AtomLinter/linter-markdown/tree/1.5.0) (2016-02-15)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.2...1.5.0)
+
+**Implemented enhancements:**
+
+- Update remark to version 4.0.0 🚀 [\#42](https://github.com/AtomLinter/linter-markdown/pull/42) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update remark-lint to version 3.0.0 🚀 [\#41](https://github.com/AtomLinter/linter-markdown/pull/41) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- improve startup time [\#38](https://github.com/AtomLinter/linter-markdown/pull/38) ([dirk-thomas](https://github.com/dirk-thomas))
+
+**Closed issues:**
+
+- Uncaught SyntaxError: Cannot read configuration file: /Users/mglaman/Projects/ng-github/package.j... [\#39](https://github.com/AtomLinter/linter-markdown/issues/39)
+- Allow Tabs? [\#37](https://github.com/AtomLinter/linter-markdown/issues/37)
+
+## [v1.4.2](https://github.com/AtomLinter/linter-markdown/tree/v1.4.2) (2016-02-04)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.1...v1.4.2)
 
-- Update fixtures for `ruleId`s ([wooorm](https://github.com/wooorm))
-
-## [1.4.1](https://github.com/AtomLinter/linter-markdown/tree/v1.4.1) (2016-02-04)
+## [v1.4.1](https://github.com/AtomLinter/linter-markdown/tree/v1.4.1) (2016-02-04)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.0...v1.4.1)
 
-- Fix linting error ([wooorm](https://github.com/wooorm))
-
-## [1.4.0](https://github.com/AtomLinter/linter-markdown/tree/v1.4.0) (2016-02-04)
+## [v1.4.0](https://github.com/AtomLinter/linter-markdown/tree/v1.4.0) (2016-02-04)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.3.0...v1.4.0)
 
-- Add `ruleId`s to lint messages ([wooorm](https://github.com/wooorm))
-- Add support for `remark-lint` prefix in `.remarkrc` [\#29](https://github.com/AtomLinter/linter-markdown/pull/29) ([wooorm](https://github.com/wooorm))
+**Implemented enhancements:**
 
-## [1.3.0](https://github.com/AtomLinter/linter-markdown/tree/1.3.0) (2015-12-29)
-[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.4...1.3.0)
+- Update eslint-config-airbnb to version 5.0.0 🚀 [\#36](https://github.com/AtomLinter/linter-markdown/pull/36) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update eslint-config-airbnb to version 4.0.0 🚀 [\#35](https://github.com/AtomLinter/linter-markdown/pull/35) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- remark-lint@2.2.1 [\#33](https://github.com/AtomLinter/linter-markdown/pull/33) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update eslint-config-airbnb to version 3.0.0 🚀 [\#28](https://github.com/AtomLinter/linter-markdown/pull/28) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Closed issues:**
+
+- Customise default lint rules [\#31](https://github.com/AtomLinter/linter-markdown/issues/31)
+- Atom linter not using configuration from ~/.remarkrc [\#29](https://github.com/AtomLinter/linter-markdown/issues/29)
+- Add support for `mdastConfig` in package.json [\#18](https://github.com/AtomLinter/linter-markdown/issues/18)
+
+## [v1.3.0](https://github.com/AtomLinter/linter-markdown/tree/v1.3.0) (2015-12-29)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.4...v1.3.0)
 
 **Closed issues:**
 
