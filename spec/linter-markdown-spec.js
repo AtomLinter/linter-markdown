@@ -20,7 +20,7 @@ describe('The remark-lint provider for Linter', () => {
     const dciPath = path.join(__dirname, 'fixtures', 'definition-case-invalid.md');
     beforeEach(() => {
       waitsForPromise(() =>
-        atom.workspace.open(dciPath).then(openEditor => editor = openEditor)
+        atom.workspace.open(dciPath).then(openEditor => { editor = openEditor; })
       );
     });
 
