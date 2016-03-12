@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "eslint": "^2.4.0",
-    "babel-eslint": "^5.0.0",
     "eslint-config-airbnb": "^6.0.2"
   },
   "eslintConfig": {
@@ -32,7 +31,6 @@
       "no-console": 0
     },
     "extends": "airbnb/base",
-    "parser": "babel-eslint",
     "globals": {
       "atom": true
     },
