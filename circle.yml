@@ -14,6 +14,5 @@ dependencies:
 test:
   pre:
     - npm run lint
-    - ./node_modules/.bin/eslint ./
   override:
     - apm test

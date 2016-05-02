@@ -2,9 +2,9 @@
 
 import * as path from 'path';
 
-describe('The remark-lint provider for Linter', () => {
-  const lint = require(path.join('..', 'lib', 'index.js')).provideLinter().lint;
+const lint = require(path.join('..', 'lib', 'index.js')).provideLinter().lint;
 
+describe('The remark-lint provider for Linter', () => {
   beforeEach(() => {
     atom.workspace.destroyActivePaneItem();
     waitsForPromise(() => {

@@ -15,5 +15,5 @@ build_script:
   - SET PATH=%LOCALAPPDATA%\atom\bin;%PATH%
   - apm clean
   - apm install
-  - ./node_modules/.bin/eslint ./
+  - npm run lint
   - apm test
