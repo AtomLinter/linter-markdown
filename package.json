@@ -4,14 +4,20 @@
   "version": "1.5.0",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
-    "lint": "remark -u remark-lint README.md LICENSE.md"
+    "lint": "remark -u remark-lint README.md LICENSE.md && eslint lib spec",
+    "test": "apm test"
   },
-  "keywords": [],
-  "activationCommands": {},
+  "keywords": [
+    "lint",
+    "linter",
+    "remark",
+    "remark-lint",
+    "markdown"
+  ],
   "repository": "https://github.com/AtomLinter/linter-markdown",
   "license": "MIT",
   "engines": {
-    "atom": "^1.0.0"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
     "remark": "^4.0.0",
@@ -19,19 +25,17 @@
     "atom-package-deps": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^2.4.0",
-    "eslint-config-airbnb": "^6.2.0",
-    "eslint-plugin-react": "^4.2.3"
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^2.0.0",
+    "eslint-plugin-import": "^1.6.1"
   },
   "eslintConfig": {
     "rules": {
-      "comma-dangle": [
-        2,
-        "never"
-      ],
+      "comma-dangle": [2, "never"],
+      "global-require": 0,
       "no-console": 0
     },
-    "extends": "airbnb/base",
+    "extends": "airbnb-base",
     "globals": {
       "atom": true
     },
