@@ -1,7 +1,7 @@
 {
   "name": "linter-markdown",
   "main": "lib/index.js",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
     "lint": "remark -u remark-lint README.md LICENSE.md && eslint lib spec",
