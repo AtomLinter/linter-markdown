@@ -22,8 +22,8 @@
   "dependencies": {
     "atom-package-deps": "^4.0.1",
     "load-plugin": "^1.0.0",
-    "remark": "^4.0.0",
-    "remark-lint": "^3.0.0"
+    "remark": "4.2.2",
+    "remark-lint": "3.2.1"
   },
   "devDependencies": {
     "eslint": "^2.9.0",
