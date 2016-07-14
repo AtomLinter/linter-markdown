@@ -1,12 +1,36 @@
-git:
-  depth: 10
-branches:
-  only:
-    - master
+# Project specific config
+env:
+  matrix:
+    - ATOM_CHANNEL=stable
+
+os:
+  - osx
+
+# Installed for linting the project
+language: node_js
+node_js: "6"
+
+# Generic setup follows
+script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
+
 notifications:
   email:
     on_success: never
     on_failure: change
-os: osx
 
-script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh && npm run lint'
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - build-essential
+    - git
+    - libgnome-keyring-dev
+    - fakeroot
