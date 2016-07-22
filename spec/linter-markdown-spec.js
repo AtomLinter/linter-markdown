@@ -39,8 +39,9 @@ describe('The remark-lint provider for Linter', () => {
           expect(messages[0].type).toEqual('Error');
           expect(messages[0].html).toBeDefined();
           expect(messages[0].html).toEqual(
-            '<span class="badge badge-flexible">definition-case</span> ' +
-            'Do not use upper-case characters in definition labels'
+            '<span class="badge badge-flexible">remark-lint:' +
+            'definition-case</span> Do not use upper-case ' +
+            'characters in definition labels'
           );
           expect(messages[0].filePath).toBeDefined();
           expect(messages[0].filePath).toMatch(/.+definition-case-invalid\.md$/);
