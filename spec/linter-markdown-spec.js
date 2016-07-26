@@ -49,6 +49,9 @@ describe('The remark-lint provider for Linter', () => {
           expect(messages[0].range.length).toBeDefined();
           expect(messages[0].range.length).toEqual(2);
           expect(messages[0].range).toEqual([[2, 0], [2, 58]]);
+        }).catch(err => {
+          console.log(err.stack);
+          throw err;
         })
       );
     });
