@@ -19,6 +19,13 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "configSchema": {
+    "disableWhenNoRemarkConfig": {
+      "type": "boolean",
+      "default": false,
+      "title": "Disable when .remarkrc is not found at project root"
+    }
+  },
   "dependencies": {
     "atom-package-deps": "^4.0.1",
     "load-plugin": "^1.0.0",
