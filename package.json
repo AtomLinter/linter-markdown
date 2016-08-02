@@ -23,7 +23,7 @@
     "atom-package-deps": "^4.0.1",
     "load-plugin": "^1.0.0",
     "remark": "4.2.2",
-    "remark-lint": "4.0.2"
+    "remark-lint": "4.1.0"
   },
   "devDependencies": {
     "eslint": "^2.9.0",
