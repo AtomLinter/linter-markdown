@@ -1,7 +1,55 @@
 # Change Log
 
-## [1.5.0](https://github.com/AtomLinter/linter-markdown/tree/1.5.0) (2016-02-15)
-[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.2...1.5.0)
+## [v2.0.0](https://github.com/AtomLinter/linter-markdown/tree/v2.0.0) (2016-08-10)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.5.2...v2.0.0)
+
+**Implemented enhancements:**
+
+- Local version of remark-lint [\#71](https://github.com/AtomLinter/linter-markdown/issues/71)
+- Add support for ignore files, local remark-lint [\#85](https://github.com/AtomLinter/linter-markdown/pull/85) ([wooorm](https://github.com/wooorm))
+- Update remark-lint to version 4.0.2 🚀 [\#81](https://github.com/AtomLinter/linter-markdown/pull/81) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update remark-lint to version 4.0.1 🚀 [\#74](https://github.com/AtomLinter/linter-markdown/pull/74) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Pin remark and remark-lint versions [\#67](https://github.com/AtomLinter/linter-markdown/pull/67) ([Arcanemagus](https://github.com/Arcanemagus))
+
+**Fixed bugs:**
+
+- Uncaught Error: Cannot read configuration file: /Users/tymen/package.jsonEISDIR: illegal operati... [\#83](https://github.com/AtomLinter/linter-markdown/issues/83)
+- "Uncaught SyntaxError: Cannot read configuration file" when invalid syntax [\#76](https://github.com/AtomLinter/linter-markdown/issues/76)
+
+**Closed issues:**
+
+- Support validate-links [\#69](https://github.com/AtomLinter/linter-markdown/issues/69)
+- Uncaught SyntaxError: Cannot read configuration file: /Users/nonameolsson/Development/smpw/packag... [\#68](https://github.com/AtomLinter/linter-markdown/issues/68)
+
+## [v1.5.2](https://github.com/AtomLinter/linter-markdown/tree/v1.5.2) (2016-05-26)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.5.1...v1.5.2)
+
+**Closed issues:**
+
+- Uncaught TypeError: Cannot read property 'external' of undefined [\#65](https://github.com/AtomLinter/linter-markdown/issues/65)
+
+## [v1.5.1](https://github.com/AtomLinter/linter-markdown/tree/v1.5.1) (2016-05-26)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.5.0...v1.5.1)
+
+**Implemented enhancements:**
+
+- Update eslint-config-airbnb-base to version 3.0.1 🚀 [\#64](https://github.com/AtomLinter/linter-markdown/pull/64) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Move to eslint-config-airbnb-base [\#61](https://github.com/AtomLinter/linter-markdown/pull/61) ([Arcanemagus](https://github.com/Arcanemagus))
+- eslint-config-airbnb@6.2.0 [\#54](https://github.com/AtomLinter/linter-markdown/pull/54) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Closed issues:**
+
+- Uncaught Error: Cannot find module 'remark-lint-no-empty-sections' [\#51](https://github.com/AtomLinter/linter-markdown/issues/51)
+
+**Merged pull requests:**
+
+- eslint@2.4.0 breaks build 🚨 [\#53](https://github.com/AtomLinter/linter-markdown/pull/53) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update eslint to version 2.2.0 🚀 [\#47](https://github.com/AtomLinter/linter-markdown/pull/47) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update babel-eslint to version 5.0.0 🚀 [\#46](https://github.com/AtomLinter/linter-markdown/pull/46) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-package-deps to version 4.0.1 🚀 [\#45](https://github.com/AtomLinter/linter-markdown/pull/45) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+## [v1.5.0](https://github.com/AtomLinter/linter-markdown/tree/v1.5.0) (2016-02-15)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.4.2...v1.5.0)
 
 **Implemented enhancements:**
 
