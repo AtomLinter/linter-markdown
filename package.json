@@ -22,7 +22,7 @@
   "dependencies": {
     "atom-package-deps": "^4.0.1",
     "remark": "5.1.0",
-    "remark-lint": "4.2.0",
+    "remark-lint": "5.0.0",
     "unified-engine-atom": "^1.0.0"
   },
   "devDependencies": {
