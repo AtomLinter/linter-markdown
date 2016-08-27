@@ -1,8 +1,7 @@
 'use babel';
 
 import * as path from 'path';
-
-const lint = require(path.join('..', 'lib', 'index.js')).provideLinter().lint;
+import * as lint from '..';
 
 describe('The remark-lint provider for Linter', () => {
   beforeEach(() => {
@@ -10,23 +9,23 @@ describe('The remark-lint provider for Linter', () => {
     waitsForPromise(() => {
       atom.packages.activatePackage('linter-markdown');
       return atom.packages.activatePackage('language-gfm').then(() =>
-        atom.workspace.open(path.join(__dirname, 'fixtures', 'definition-case-valid.md'))
+        atom.workspace.open(path.join(__dirname, 'fixtures', 'definition-use-valid.md'))
       );
     });
   });
 
   describe('checks a file with issues and', () => {
     let editor = null;
-    const dciPath = path.join(__dirname, 'fixtures', 'definition-case-invalid.md');
+    const invalidPath = path.join(__dirname, 'fixtures', 'definition-use-invalid.md');
     beforeEach(() => {
       waitsForPromise(() =>
-        atom.workspace.open(dciPath).then(openEditor => { editor = openEditor; })
+        atom.workspace.open(invalidPath).then(openEditor => { editor = openEditor; })
       );
     });
 
     it('finds at least one message', () => {
       waitsForPromise(() =>
-        lint(editor).then(messages =>
+        lint.provideLinter().lint(editor).then(messages =>
           expect(messages.length).toBeGreaterThan(0)
         )
       );
@@ -34,17 +33,16 @@ describe('The remark-lint provider for Linter', () => {
 
     it('verifies the first message', () => {
       waitsForPromise(() =>
-        lint(editor).then(messages => {
+        lint.provideLinter().lint(editor).then(messages => {
           expect(messages[0].type).toBeDefined();
           expect(messages[0].type).toEqual('Error');
           expect(messages[0].html).toBeDefined();
           expect(messages[0].html).toEqual(
             '<span class="badge badge-flexible">remark-lint:' +
-            'definition-case</span> Do not use upper-case ' +
-            'characters in definition labels'
+            'no-unused-definitions</span> Found unused definition'
           );
           expect(messages[0].filePath).toBeDefined();
-          expect(messages[0].filePath).toMatch(/.+definition-case-invalid\.md$/);
+          expect(messages[0].filePath).toMatch(/.+definition-use-invalid\.md$/);
           expect(messages[0].range).toBeDefined();
           expect(messages[0].range.length).toBeDefined();
           expect(messages[0].range.length).toEqual(2);
@@ -55,10 +53,10 @@ describe('The remark-lint provider for Linter', () => {
   });
 
   it('finds nothing wrong with a valid file', () => {
-    const dcvPath = path.join(__dirname, 'fixtures', 'definition-case-valid.md');
+    const validPath = path.join(__dirname, 'fixtures', 'definition-use-valid.md');
     waitsForPromise(() =>
-      atom.workspace.open(dcvPath).then(editor =>
-        lint(editor).then(messages =>
+      atom.workspace.open(validPath).then(editor =>
+        lint.provideLinter().lint(editor).then(messages =>
           expect(messages.length).toEqual(0)
         )
       )
