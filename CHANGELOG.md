@@ -1,5 +1,26 @@
 # Change Log
 
+## [v3.0.0](https://github.com/AtomLinter/linter-markdown/tree/v3.0.0) (2016-09-02)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v2.0.1...v3.0.0)
+
+**Implemented enhancements:**
+
+- Support presets [\#103](https://github.com/AtomLinter/linter-markdown/issues/103)
+- Add support for presets [\#106](https://github.com/AtomLinter/linter-markdown/pull/106) ([wooorm](https://github.com/wooorm))
+- Update remark-lint to version 4.2.0 🚀 [\#96](https://github.com/AtomLinter/linter-markdown/pull/96) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Closed issues:**
+
+- linter-markdown not respecting .remarkrc [\#102](https://github.com/AtomLinter/linter-markdown/issues/102)
+- configuration comments no longer work [\#97](https://github.com/AtomLinter/linter-markdown/issues/97)
+
+## [v2.0.1](https://github.com/AtomLinter/linter-markdown/tree/v2.0.1) (2016-08-12)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v2.0.0...v2.0.1)
+
+**Fixed bugs:**
+
+- Uncaught TypeError: Cannot convert undefined or null to object [\#94](https://github.com/AtomLinter/linter-markdown/issues/94)
+
 ## [v2.0.0](https://github.com/AtomLinter/linter-markdown/tree/v2.0.0) (2016-08-10)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.5.2...v2.0.0)
 
