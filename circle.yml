@@ -1,15 +1,16 @@
-machine:
-  node:
-    version: 4.4.7
+test:
+  override:
+    - curl -s https://raw.githubusercontent.com/Arcanemagus/ci/atomlinter/build-package.sh | sh
+  post:
+    - npm run lint
+
 dependencies:
   override:
-    - curl -L https://atom.io/download/deb -o atom-amd64.deb
-    - sudo dpkg --install atom-amd64.deb || true
-    - sudo apt-get update
-    - sudo apt-get -f install
-    - apm install
-test:
-  pre:
-    - npm run lint
-  override:
-    - apm test
+    - echo "Managed in the script"
+
+machine:
+  node:
+    version: 4
+
+  environment:
+    ATOM_LINT_WITH_BUNDLED_NODE: "false"

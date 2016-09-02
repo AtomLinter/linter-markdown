@@ -1,9 +1,8 @@
 {
-  "plugins": {
-    "lint": {
-      "maximum-line-length": false
-    }
-  },
+  "presets": [
+    "lint-recommended",
+    "lint-consistent"
+  ],
   "settings": {
     "commonmark": true
   }

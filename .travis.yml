@@ -1,13 +1,41 @@
+### Project specific config ###
 language: node_js
+
 node_js:
-- '4.0'
-- '6.0'
+  - '4'
+  - '6'
+
+env:
+  global:
+    - ATOM_LINT_WITH_BUNDLED_NODE="false"
+
 os:
-- linux
-- osx
-script: curl -s https://raw.githubusercontent.com/Arcanemagus/ci/atomlinter/build-package.sh
-  | sh
-  && npm run lint
+  - linux
+  - osx
+
+after_script:
+  - npm run lint
+
+### Generic setup follows ###
+script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
+
+# Needed to disable the auto-install step running `npm install`
+install: true
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
+
+sudo: false
+
 addons:
   apt:
     packages:
@@ -15,10 +43,3 @@ addons:
     - git
     - libgnome-keyring-dev
     - fakeroot
-branches:
-  only:
-    - master
-notifications:
-  email:
-    on_success: never
-    on_failure: change
