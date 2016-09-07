@@ -1,5 +1,13 @@
 # Change Log
 
+## [v3.0.1](https://github.com/AtomLinter/linter-markdown/tree/v3.0.1) (2016-09-07)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.0...v3.0.1)
+
+**Implemented enhancements:**
+
+- Update eslint-config-airbnb-base to version 7.0.0 🚀 [\#109](https://github.com/AtomLinter/linter-markdown/pull/109) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update remark to version 6.0.1 🚀 [\#107](https://github.com/AtomLinter/linter-markdown/pull/107) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
 ## [v3.0.0](https://github.com/AtomLinter/linter-markdown/tree/v3.0.0) (2016-09-02)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v2.0.1...v3.0.0)
 
