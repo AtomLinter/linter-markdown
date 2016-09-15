@@ -19,7 +19,7 @@ describe('The remark-lint provider for Linter', () => {
     const invalidPath = path.join(__dirname, 'fixtures', 'definition-use-invalid.md');
     beforeEach(() => {
       waitsForPromise(() =>
-        atom.workspace.open(invalidPath).then(openEditor => { editor = openEditor; })
+        atom.workspace.open(invalidPath).then((openEditor) => { editor = openEditor; })
       );
     });
 
@@ -33,7 +33,7 @@ describe('The remark-lint provider for Linter', () => {
 
     it('verifies the first message', () => {
       waitsForPromise(() =>
-        lint.provideLinter().lint(editor).then(messages => {
+        lint.provideLinter().lint(editor).then((messages) => {
           expect(messages[0].type).toBeDefined();
           expect(messages[0].type).toEqual('Error');
           expect(messages[0].html).toBeDefined();
