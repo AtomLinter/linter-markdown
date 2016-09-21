@@ -1,5 +1,17 @@
 # Change Log
 
+## [v3.0.2](https://github.com/AtomLinter/linter-markdown/tree/v3.0.2) (2016-09-21)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.1...v3.0.2)
+
+**Implemented enhancements:**
+
+- eslint-config-airbnb-base@7.1.0 [\#111](https://github.com/AtomLinter/linter-markdown/pull/111) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Fixed bugs:**
+
+- \[Package-Deps\] Unable to get loaded package 'linter-markdown' [\#112](https://github.com/AtomLinter/linter-markdown/issues/112)
+- Specify to auto-install Linter [\#113](https://github.com/AtomLinter/linter-markdown/pull/113) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v3.0.1](https://github.com/AtomLinter/linter-markdown/tree/v3.0.1) (2016-09-07)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.0...v3.0.1)
 
@@ -116,6 +128,10 @@
 ## [v1.3.0](https://github.com/AtomLinter/linter-markdown/tree/v1.3.0) (2015-12-29)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v1.2.4...v1.3.0)
 
+**Implemented enhancements:**
+
+- Automatically install linter [\#26](https://github.com/AtomLinter/linter-markdown/pull/26) ([Arcanemagus](https://github.com/Arcanemagus))
+
 **Closed issues:**
 
 - Add specs [\#13](https://github.com/AtomLinter/linter-markdown/issues/13)
@@ -124,7 +140,6 @@
 **Merged pull requests:**
 
 - Add some repository configuration files [\#27](https://github.com/AtomLinter/linter-markdown/pull/27) ([Arcanemagus](https://github.com/Arcanemagus))
-- Automatically install linter [\#26](https://github.com/AtomLinter/linter-markdown/pull/26) ([Arcanemagus](https://github.com/Arcanemagus))
 - Fix the linter name [\#25](https://github.com/AtomLinter/linter-markdown/pull/25) ([Arcanemagus](https://github.com/Arcanemagus))
 - Add specs [\#24](https://github.com/AtomLinter/linter-markdown/pull/24) ([Arcanemagus](https://github.com/Arcanemagus))
 - Add lint config [\#23](https://github.com/AtomLinter/linter-markdown/pull/23) ([Arcanemagus](https://github.com/Arcanemagus))
