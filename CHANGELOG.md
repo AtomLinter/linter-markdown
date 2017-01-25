@@ -1,5 +1,12 @@
 # Change Log
 
+## [v3.1.0](https://github.com/AtomLinter/linter-markdown/tree/v3.1.0) (2017-01-24)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.2...v3.1.0)
+
+**Implemented enhancements:**
+
+- Update dependencies to enable Greenkeeper 🌴 [\#119](https://github.com/AtomLinter/linter-markdown/pull/119) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
 ## [v3.0.2](https://github.com/AtomLinter/linter-markdown/tree/v3.0.2) (2016-09-21)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.1...v3.0.2)
 
