@@ -11,13 +11,15 @@ env:
 
 os:
   - linux
-  - osx
 
 after_script:
   - npm run lint
 
 ### Generic setup follows ###
-script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
+script:
+  - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
+  - chmod u+x build-package.sh
+  - ./build-package.sh
 
 # Needed to disable the auto-install step running `npm install`
 install: true
