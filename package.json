@@ -27,7 +27,7 @@
     "remark": "6.2.0",
     "remark-preset-lint-consistent": "^1.0.0",
     "remark-preset-lint-recommended": "^1.0.0",
-    "unified-engine-atom": "^2.0.0"
+    "unified-engine-atom": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.13.0",
