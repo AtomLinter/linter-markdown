@@ -18,7 +18,7 @@ If there is no configuration found for **remark-lint**, this linter runs [remark
 If there *is* configuration for **remark-lint**, through `.remarkrc` files
 or `remarkConfig` in `package.json`s, this linter works just like
 [remark-cli][cli] but only uses the **remark-lint** plugin. Make sure
-**remark-lint** is installed in this case (optionally globally).
+**remark-lint** is installed in this case (locally).
 
 Read more about configuring [remark-lint][configuration] on its README.
 

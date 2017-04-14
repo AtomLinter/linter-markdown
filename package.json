@@ -24,10 +24,10 @@
   ],
   "dependencies": {
     "atom-package-deps": "^4.0.1",
-    "remark": "6.2.0",
-    "remark-preset-lint-consistent": "^1.0.0",
-    "remark-preset-lint-recommended": "^1.0.0",
-    "unified-engine-atom": "^2.0.0"
+    "remark": "7.0.0",
+    "remark-preset-lint-consistent": "^2.0.0",
+    "remark-preset-lint-recommended": "^2.0.0",
+    "unified-engine-atom": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^3.13.0",
@@ -65,7 +65,7 @@
   "providedServices": {
     "linter": {
       "versions": {
-        "1.0.0": "provideLinter"
+        "2.0.0": "provideLinter"
       }
     }
   },

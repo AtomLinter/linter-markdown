@@ -1,7 +1,7 @@
 {
-  "presets": [
-    "lint-recommended",
-    "lint-consistent"
+  "plugins": [
+    "preset-lint-recommended",
+    "preset-lint-consistent"
   ],
   "settings": {
     "commonmark": true
