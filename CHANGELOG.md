@@ -1,5 +1,13 @@
 # Change Log
 
+## [v4.0.0](https://github.com/AtomLinter/linter-markdown/tree/v4.0.0) (2017-04-14)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.1.1...v4.0.0)
+
+**Implemented enhancements:**
+
+- chore\(package\): update atom-package-deps to version 4.6.0 [\#132](https://github.com/AtomLinter/linter-markdown/pull/132) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update remark and linter [\#131](https://github.com/AtomLinter/linter-markdown/pull/131) ([wooorm](https://github.com/wooorm))
+
 ## [v3.1.1](https://github.com/AtomLinter/linter-markdown/tree/v3.1.1) (2017-04-12)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.1.0...v3.1.1)
 
