@@ -30,11 +30,11 @@ describe('The remark-lint provider for Linter', () => {
 
     it('verifies the first message', async () => {
       const messages = await lint.provideLinter().lint(editor);
-      expect(messages[0].severity).toEqual('warning');
-      expect(messages[0].location.file).toMatch(/.+definition-use-invalid\.md$/);
+      expect(messages[0].severity).toBe('warning');
+      expect(messages[0].location.file).toBe(invalidPath);
       expect(messages[0].location.position).toEqual([[2, 0], [2, 58]]);
       expect(messages[0].description).not.toBeDefined();
-      expect(messages[0].excerpt).toEqual('Found unused definition (remark-lint:no-unused-definitions)');
+      expect(messages[0].excerpt).toBe('Found unused definition (remark-lint:no-unused-definitions)');
     });
   });
 
