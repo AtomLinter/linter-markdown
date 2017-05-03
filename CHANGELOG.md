@@ -1,5 +1,12 @@
 # Change Log
 
+## [v4.0.1](https://github.com/AtomLinter/linter-markdown/tree/v4.0.1) (2017-05-03)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.0.0...v4.0.1)
+
+**Implemented enhancements:**
+
+- Update remark to v7.0.1 🚀 [\#133](https://github.com/AtomLinter/linter-markdown/pull/133) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
 ## [v4.0.0](https://github.com/AtomLinter/linter-markdown/tree/v4.0.0) (2017-04-14)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.1.1...v4.0.0)
 
