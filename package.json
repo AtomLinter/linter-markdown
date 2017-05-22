@@ -17,7 +17,7 @@
   "repository": "https://github.com/AtomLinter/linter-markdown",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.7.0 <2.0.0"
   },
   "package-deps": [
     "linter"
