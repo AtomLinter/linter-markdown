@@ -1,11 +1,25 @@
 # Change Log
 
+## [v4.1.0](https://github.com/AtomLinter/linter-markdown/tree/v4.1.0) (2017-07-12)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.0.1...v4.1.0)
+
+**Implemented enhancements:**
+
+- Global plugins and new preset [\#143](https://github.com/AtomLinter/linter-markdown/pull/143) ([wooorm](https://github.com/wooorm))
+
+**Fixed bugs:**
+
+- Update Atom minimum version [\#135](https://github.com/AtomLinter/linter-markdown/issues/135)
+- Cannot find module 'lint' \(with global remark-lint install\) [\#115](https://github.com/AtomLinter/linter-markdown/issues/115)
+- Update Travis-CI image to Trusty [\#137](https://github.com/AtomLinter/linter-markdown/pull/137) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update minimum Atom version [\#136](https://github.com/AtomLinter/linter-markdown/pull/136) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v4.0.1](https://github.com/AtomLinter/linter-markdown/tree/v4.0.1) (2017-05-03)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.0.0...v4.0.1)
 
 **Implemented enhancements:**
 
-- Update remark to v7.0.1 🚀 [\#133](https://github.com/AtomLinter/linter-markdown/pull/133) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update remark to v7.0.1 🚀 [\#133](https://github.com/AtomLinter/linter-markdown/pull/133) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v4.0.0](https://github.com/AtomLinter/linter-markdown/tree/v4.0.0) (2017-04-14)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.1.1...v4.0.0)
@@ -23,7 +37,7 @@
 - Async-ify the specs [\#128](https://github.com/AtomLinter/linter-markdown/pull/128) ([Arcanemagus](https://github.com/Arcanemagus))
 - Defer dependency loading [\#127](https://github.com/AtomLinter/linter-markdown/pull/127) ([Arcanemagus](https://github.com/Arcanemagus))
 - Remove macOS testing [\#126](https://github.com/AtomLinter/linter-markdown/pull/126) ([Arcanemagus](https://github.com/Arcanemagus))
-- Update remark-cli to the latest version 🚀 [\#122](https://github.com/AtomLinter/linter-markdown/pull/122) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update remark-cli to version 3.0.0 🚀 [\#122](https://github.com/AtomLinter/linter-markdown/pull/122) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 **Fixed bugs:**
 
@@ -35,7 +49,7 @@
 
 **Implemented enhancements:**
 
-- Update dependencies to enable Greenkeeper 🌴 [\#119](https://github.com/AtomLinter/linter-markdown/pull/119) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update dependencies to enable Greenkeeper 🌴 [\#119](https://github.com/AtomLinter/linter-markdown/pull/119) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v3.0.2](https://github.com/AtomLinter/linter-markdown/tree/v3.0.2) (2016-09-21)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v3.0.1...v3.0.2)
