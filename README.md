@@ -14,11 +14,20 @@ Lint markdown files using [remark-lint][remark-lint] and the
 
 If there is no configuration found for **remark-lint**, this linter runs [remark-preset-lint-consistent][consistent] and
 [remark-preset-lint-recommended][recommended] (both can be turned off).
+You can a also turn on [remark-preset-lint-markdown-style-guide][styleguide].
 
 If there *is* configuration for **remark-lint**, through `.remarkrc` files
 or `remarkConfig` in `package.json`s, this linter works just like
-[remark-cli][cli] but only uses the **remark-lint** plugin. Make sure
-**remark-lint** is installed in this case (locally).
+[remark-cli][cli].
+
+You should probably install modules referenced in `.remarkrc` files locally
+(`npm install` without the `-g` or `--global` flag). If you do install modules
+globally, you must either use [nvm][], or have
+a [`prefix` in your `.npmrc`][prefix].
+
+See [this tutorial][set-up] on how to set-up npm to work without sudo, which
+is good practise, and comes with the added benefit that `linter-markdown`
+can pick up on globally installed modules.
 
 Read more about configuring [remark-lint][configuration] on its README.
 
@@ -37,4 +46,8 @@ We also maintain a [changelog][changelog] containing recent changes.
 [cli]: https://github.com/wooorm/remark/tree/master/packages/remark-cli
 [consistent]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-consistent
 [recommended]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-recommended
+[styleguide]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide
 [linter-remark]: https://github.com/wooorm/linter-remark
+[nvm]: https://github.com/creationix/nvm
+[prefix]: https://docs.npmjs.com/misc/config#prefix
+[set-up]: https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md

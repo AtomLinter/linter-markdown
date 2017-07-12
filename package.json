@@ -26,6 +26,7 @@
     "atom-package-deps": "^4.6.0",
     "remark": "7.0.1",
     "remark-preset-lint-consistent": "^2.0.0",
+    "remark-preset-lint-markdown-style-guide": "^1.0.0",
     "remark-preset-lint-recommended": "^2.0.0",
     "unified-engine-atom": "^5.0.0"
   },
@@ -87,6 +88,12 @@
       "description": "Use [remark-preset-lint-consistent](https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-consistent) if no **remark-lint** config is found.",
       "type": "boolean",
       "default": true
+    },
+    "presetStyleGuideWithoutConfig": {
+      "title": "Strict markdown style guide by default",
+      "description": "Use [remark-preset-lint-markdown-style-guide](https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide) if no **remark-lint** config is found.",
+      "type": "boolean",
+      "default": false
     },
     "scopes": {
       "title": "Scopes",
