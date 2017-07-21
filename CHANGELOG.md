@@ -1,5 +1,13 @@
 # Change Log
 
+## [v5.0.0](https://github.com/AtomLinter/linter-markdown/tree/v5.0.0) (2017-07-21)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.1.0...v5.0.0)
+
+**Implemented enhancements:**
+
+- Update remark-cli to version 4.0.0 🚀 [\#145](https://github.com/AtomLinter/linter-markdown/pull/145) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update remark to version 8.0.0 🚀 [\#144](https://github.com/AtomLinter/linter-markdown/pull/144) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v4.1.0](https://github.com/AtomLinter/linter-markdown/tree/v4.1.0) (2017-07-12)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.0.1...v4.1.0)
 
