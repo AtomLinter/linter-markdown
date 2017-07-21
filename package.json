@@ -31,7 +31,7 @@
     "unified-engine-atom": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.0",
+    "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0",
     "jasmine-fix": "^1.0.1",
