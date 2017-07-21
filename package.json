@@ -35,7 +35,7 @@
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0",
     "jasmine-fix": "^1.0.1",
-    "remark-cli": "^3.0.0"
+    "remark-cli": "^4.0.0"
   },
   "eslintConfig": {
     "rules": {
