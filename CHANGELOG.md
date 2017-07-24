@@ -1,5 +1,14 @@
 # Change Log
 
+## [v5.1.0](https://github.com/AtomLinter/linter-markdown/tree/v5.1.0) (2017-07-24)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v5.0.0...v5.1.0)
+
+**Implemented enhancements:**
+
+- Update remark-preset-lint-markdown-style-guide to version 2.0.0 🚀 [\#147](https://github.com/AtomLinter/linter-markdown/pull/147) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update remark-preset-lint-recommended to version 3.0.0 🚀 [\#146](https://github.com/AtomLinter/linter-markdown/pull/146) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update eslint to version 4.0.0 🚀 [\#141](https://github.com/AtomLinter/linter-markdown/pull/141) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v5.0.0](https://github.com/AtomLinter/linter-markdown/tree/v5.0.0) (2017-07-21)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v4.1.0...v5.0.0)
 
