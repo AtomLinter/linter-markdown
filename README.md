@@ -15,6 +15,7 @@ Lint markdown files using [remark-lint][remark-lint] and the
 If there is no configuration found for **remark-lint**, this linter runs [remark-preset-lint-consistent][consistent] and
 [remark-preset-lint-recommended][recommended] (both can be turned off).
 You can a also turn on [remark-preset-lint-markdown-style-guide][styleguide].
+By default, [YAML frontmatter][yaml] is supported, but you can turn that off.
 
 If there *is* configuration for **remark-lint**, through `.remarkrc` files
 or `remarkConfig` in `package.json`s, this linter works just like
@@ -44,6 +45,7 @@ We also maintain a [changelog][changelog] containing recent changes.
 [linter]: https://atom.io/packages/linter
 [screenshot]: https://raw.githubusercontent.com/AtomLinter/linter-markdown/master/assets/screenshot.png
 [cli]: https://github.com/wooorm/remark/tree/master/packages/remark-cli
+[yaml]: https://github.com/wooorm/remark-frontmatter
 [consistent]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-consistent
 [recommended]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-recommended
 [styleguide]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide
