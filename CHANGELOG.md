@@ -1,5 +1,12 @@
 # Change Log
 
+## [v5.2.0](https://github.com/AtomLinter/linter-markdown/tree/v5.2.0) (2017-08-18)
+[Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v5.1.0...v5.2.0)
+
+**Implemented enhancements:**
+
+- Add support for YAML frontmatter by default [\#149](https://github.com/AtomLinter/linter-markdown/pull/149) ([wooorm](https://github.com/wooorm))
+
 ## [v5.1.0](https://github.com/AtomLinter/linter-markdown/tree/v5.1.0) (2017-07-24)
 [Full Changelog](https://github.com/AtomLinter/linter-markdown/compare/v5.0.0...v5.1.0)
 
