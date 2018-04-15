@@ -4,6 +4,7 @@
   "version": "5.2.0",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "remark README.md LICENSE.md && eslint lib spec",
     "test": "apm test"
   },
@@ -32,6 +33,12 @@
     "unified-engine-atom": "^5.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "@commitlint/travis-cli": "^6.1.3",
+    "@semantic-release/apm-config": "^2.0.1",
+    "husky": "^0.14.3",
+    "semantic-release": "^15.1.7",
     "eslint": "^4.6.0",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
@@ -115,5 +122,13 @@
         "text.md"
       ]
     }
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
