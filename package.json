@@ -15,7 +15,10 @@
     "remark-lint",
     "markdown"
   ],
-  "repository": "https://github.com/AtomLinter/linter-markdown",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-markdown.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.7.0 <2.0.0"
