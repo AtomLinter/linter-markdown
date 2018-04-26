@@ -1,3 +1,11 @@
+<a name="5.2.1"></a>
+## [5.2.1](https://github.com/AtomLinter/linter-markdown/compare/v5.2.0...v5.2.1) (2018-04-26)
+
+
+### Bug Fixes
+
+* **package:** update remark to version 9.0.0 ([591cc5c](https://github.com/AtomLinter/linter-markdown/commit/591cc5c))
+
 # Change Log
 
 ## [v5.2.0](https://github.com/AtomLinter/linter-markdown/tree/v5.2.0) (2017-08-18)
