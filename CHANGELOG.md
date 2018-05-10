@@ -1,3 +1,11 @@
+<a name="5.2.2"></a>
+## [5.2.2](https://github.com/AtomLinter/linter-markdown/compare/v5.2.1...v5.2.2) (2018-05-10)
+
+
+### Bug Fixes
+
+* **package:** update unified-engine-atom to version 7.0.0 ([81666fe](https://github.com/AtomLinter/linter-markdown/commit/81666fe))
+
 <a name="5.2.1"></a>
 ## [5.2.1](https://github.com/AtomLinter/linter-markdown/compare/v5.2.0...v5.2.1) (2018-04-26)
 
