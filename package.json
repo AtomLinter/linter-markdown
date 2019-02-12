@@ -134,11 +134,15 @@
     "rangeStrategy": "pin",
     "packageRules": [
       {
-        "packagePatterns": ["^eslint"],
+        "packagePatterns": [
+          "^eslint"
+        ],
         "groupName": "ESLint packages"
       },
       {
-        "packagePatterns": ["^remark"],
+        "packagePatterns": [
+          "^remark"
+        ],
         "groupName": "Remark packages"
       }
     ]
