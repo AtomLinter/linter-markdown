@@ -1,7 +1,7 @@
 {
   "name": "linter-markdown",
   "main": "lib/index.js",
-  "version": "5.2.3",
+  "version": "5.2.4",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
