@@ -126,6 +126,23 @@
       ]
     }
   },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "semanticCommits": true,
+    "rangeStrategy": "pin",
+    "packageRules": [
+      {
+        "packagePatterns": ["^eslint"],
+        "groupName": "ESLint packages"
+      },
+      {
+        "packagePatterns": ["^remark"],
+        "groupName": "Remark packages"
+      }
+    ]
+  },
   "release": {
     "extends": "@semantic-release/apm-config"
   },
