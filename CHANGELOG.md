@@ -1,3 +1,10 @@
+## [5.2.6](https://github.com/AtomLinter/linter-markdown/compare/v5.2.5...v5.2.6) (2019-02-13)
+
+
+### Bug Fixes
+
+* **deps:** update remark packages ([8ec6337](https://github.com/AtomLinter/linter-markdown/commit/8ec6337))
+
 ## [5.2.5](https://github.com/AtomLinter/linter-markdown/compare/v5.2.4...v5.2.5) (2019-02-13)
 
 
