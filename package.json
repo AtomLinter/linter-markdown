@@ -4,7 +4,6 @@
   "version": "5.2.4",
   "description": "Lint markdown on the fly, using remark-lint",
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "remark README.md LICENSE.md && eslint lib spec",
     "test": "apm test"
   },
@@ -40,7 +39,7 @@
     "@commitlint/config-conventional": "7.5.0",
     "@commitlint/travis-cli": "7.5.2",
     "@semantic-release/apm-config": "6.0.1",
-    "husky": "0.14.3",
+    "husky": "1.3.1",
     "semantic-release": "15.13.3",
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "12.1.0",
@@ -149,6 +148,11 @@
   },
   "release": {
     "extends": "@semantic-release/apm-config"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "commitlint": {
     "extends": [
