@@ -18,7 +18,7 @@ To use this `linter-markdown` package for Atom, simply install the package using
 
 If you need a specific configuration for the package, there is 2 ways of installing this `linter-markdown` package: a system-wide way, and a folder-specific way.
 
-## system-wide install (system-wide configuration)
+## Global Configuration
 
 The system-wide way of installing the `linter-markdown` package should be used if you use the same configuration on all your markdown documents. This solution is also convenient if your markdown documents are not part of an npm project (and hence do not have an associated package.json file).
 
