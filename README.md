@@ -42,7 +42,9 @@ You then have to locally install all modules referenced in your `.remarkrc` file
 
 ## other informations
 
-If there *is* configuration for **remark-lint**, through `.remarkrc` files or `remarkConfig` in `package.json`s, this linter works just like [remark-cli][cli].
+If there *is* configuration for **remark-lint**, through `.remarkrc` files or
+`remarkConfig` in `package.json`s, this linter works just like
+[remark-cli][cli].
 
 See [this tutorial][set-up] on how to set-up npm to work without sudo, which is good practise, and comes with the added benefit that `linter-markdown` can pick up on globally installed modules.
 
