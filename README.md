@@ -12,9 +12,18 @@
 Lint markdown files using [remark-lint][remark-lint] and the
 [linter][linter] package for Atom.
 
+To use this `linter-markdown` package for Atom, simply install the package using
+the Atom package manager. If there is no configuration found for
+**remark-lint**, this linter runs [remark-preset-lint-consistent][consistent]
+and [remark-preset-lint-recommended][recommended] (both can be turned off). You
+can a also turn on [remark-preset-lint-markdown-style-guide][styleguide]. By
+default, [YAML frontmatter][yaml] is supported, but you can turn that off.
+
 ## Standard Installation
 
-To use this `linter-markdown` package for Atom, simply install the package using the Atom package manager. If there is no configuration found for **remark-lint**, this linter runs [remark-preset-lint-consistent][consistent] and [remark-preset-lint-recommended][recommended] (both can be turned off). You can a also turn on [remark-preset-lint-markdown-style-guide][styleguide]. By default, [YAML frontmatter][yaml] is supported, but you can turn that off.
+If there *is* configuration for **remark-lint**, through `.remarkrc` files
+or `remarkConfig` in `package.json`s, this linter works just like
+[remark-cli][cli].
 
 If you need a specific configuration for the package, there is 2 ways of installing this `linter-markdown` package: a system-wide way, and a folder-specific way.
 
@@ -61,7 +70,8 @@ pick up on globally installed modules.
 
 Read more about configuring [remark-lint][configuration] on its README.
 
-A similar linter, [linter-remark][], runs all remark plugins, but only when they are configured to run.
+A similar linter, [linter-remark][], runs all remark plugins, but only
+when they are configured to run.
 
 We also maintain a [changelog][changelog] containing recent changes.
 
