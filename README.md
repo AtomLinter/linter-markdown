@@ -9,7 +9,8 @@
 [![Plugin installs!](https://img.shields.io/apm/dm/linter-markdown.svg)](https://atom.io/packages/linter-markdown)
 [![Package version!](https://img.shields.io/apm/v/linter-markdown.svg?style=flat)](https://atom.io/packages/linter-markdown)
 
-Lint markdown files using [remark-lint][remark-lint] and the [linter][linter] package for atom.
+Lint markdown files using [remark-lint][remark-lint] and the
+[linter][linter] package for Atom.
 
 ## Standard Installation
 
