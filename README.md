@@ -11,7 +11,7 @@
 
 Lint markdown files using [remark-lint][remark-lint] and the [linter][linter] package for atom.
 
-## standard install (default configuration)
+## Standard Installation
 
 To use this `linter-markdown` package for Atom, simply install the package using the Atom package manager. If there is no configuration found for **remark-lint**, this linter runs [remark-preset-lint-consistent][consistent] and [remark-preset-lint-recommended][recommended] (both can be turned off). You can a also turn on [remark-preset-lint-markdown-style-guide][styleguide]. By default, [YAML frontmatter][yaml] is supported, but you can turn that off.
 
