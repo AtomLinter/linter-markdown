@@ -53,7 +53,9 @@ If there *is* configuration for **remark-lint**, through `.remarkrc` files or
 `remarkConfig` in `package.json`s, this linter works just like
 [remark-cli][cli].
 
-See [this tutorial][set-up] on how to set-up npm to work without sudo, which is good practise, and comes with the added benefit that `linter-markdown` can pick up on globally installed modules.
+See [this tutorial][set-up] on how to set-up `npm` to work without `sudo`, which
+is good practice, and comes with the added benefit that `linter-markdown` can
+pick up on globally installed modules.
 
 Read more about configuring [remark-lint][configuration] on its README.
 
