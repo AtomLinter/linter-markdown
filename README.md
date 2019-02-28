@@ -27,19 +27,6 @@ or `remarkConfig` in `package.json`s, this linter works just like
 
 If you need a specific configuration for the package, there is 2 ways of installing this `linter-markdown` package: a system-wide way, and a folder-specific way.
 
-## Global Configuration
-
-The global configuration should only be used if you need to use the same
-configuration on all your Markdown documents, and they aren't contained within
-projects of their own.
-
-You can set you system-wide configuration in a `.remarkrc` file that should be
-saved in `~/.remarkrc`, at the root of your home directory.
-
-You then have to globally install all modules referenced in your `.remarkrc`
-file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or
-`--global` flag).
-
 ## Project-specific Configuration
 
 The folder-specific way of configuring `remark` should be used if:
@@ -56,6 +43,19 @@ for details.
 
 You then have to locally install all modules referenced in your `.remarkrc`
 file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or
+`--global` flag).
+
+## Global Configuration
+
+The global configuration should only be used if you need to use the same
+configuration on all your Markdown documents, and they aren't contained within
+projects of their own.
+
+You can set you system-wide configuration in a `.remarkrc` file that should be
+saved in `~/.remarkrc`, at the root of your home directory.
+
+You then have to globally install all modules referenced in your `.remarkrc`
+file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or
 `--global` flag).
 
 ## More Information
