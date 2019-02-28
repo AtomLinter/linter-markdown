@@ -31,7 +31,7 @@ You then have to globally install all modules referenced in your `.remarkrc`
 file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or
 `--global` flag).
 
-## folder-specific install (project-specific configuration)
+## Project-specific Configuration
 
 The folder-specific way of configuring `remark` should be used if:
 * You are working on the project with other people
