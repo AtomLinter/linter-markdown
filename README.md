@@ -22,7 +22,8 @@ If you need a specific configuration for the package, there is 2 ways of install
 
 The system-wide way of installing the `linter-markdown` package should be used if you use the same configuration on all your markdown documents. This solution is also convenient if your markdown documents are not part of an npm project (and hence do not have an associated package.json file).
 
-You can set you system-wide configuration in a `.remarkrc` file that should be saved in `~/.remarkrc`, at the root of your home directory.
+You can set you system-wide configuration in a `.remarkrc` file that should be
+saved in `~/.remarkrc`, at the root of your home directory.
 
 You then have to globally install all modules referenced in your `.remarkrc` file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or `--global` flag).
 
