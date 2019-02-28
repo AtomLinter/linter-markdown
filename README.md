@@ -43,7 +43,9 @@ These should be placed in your project, see
 [remark configuration](https://github.com/unifiedjs/unified-engine/blob/master/doc/configure.md)
 for details.
 
-You then have to locally install all modules referenced in your `.remarkrc` file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or `--global` flag). If you do install modules globally, you must either use [nvm][], or have a [`prefix` in your `.npmrc`][prefix].
+You then have to locally install all modules referenced in your `.remarkrc`
+file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or
+`--global` flag).
 
 ## other informations
 
