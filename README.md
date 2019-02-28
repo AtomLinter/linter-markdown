@@ -36,7 +36,12 @@ The folder-specific way of configuring `remark` should be used if:
 * You need repeatable results
 * You use need a different configuration for each project
 
-You can set you folder-specific configuration in a `.remarkrc` file that should be saved in each folder of your markdown documents.
+You can set you folder-specific configuration in:
+* A `remarkConfig` section in `package.json`
+* A `.remarkrc.js` or `.remarkrc` file
+These should be placed in your project, see
+[remark configuration](https://github.com/unifiedjs/unified-engine/blob/master/doc/configure.md)
+for details.
 
 You then have to locally install all modules referenced in your `.remarkrc` file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or `--global` flag). If you do install modules globally, you must either use [nvm][], or have a [`prefix` in your `.npmrc`][prefix].
 
