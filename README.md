@@ -47,7 +47,7 @@ You then have to locally install all modules referenced in your `.remarkrc`
 file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or
 `--global` flag).
 
-## other informations
+## More Information
 
 If there *is* configuration for **remark-lint**, through `.remarkrc` files or
 `remarkConfig` in `package.json`s, this linter works just like
