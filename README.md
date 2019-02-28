@@ -31,7 +31,10 @@ file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or
 
 ## folder-specific install (project-specific configuration)
 
-The folder-specific way of installing the `linter-markdown` package should be used if you use differents configurations depending of each markdown document. This solution is also convenient if your markdown documents are part of an npm project (and hence have an associated package.json file).
+The folder-specific way of configuring `remark` should be used if:
+* You are working on the project with other people
+* You need repeatable results
+* You use need a different configuration for each project
 
 You can set you folder-specific configuration in a `.remarkrc` file that should be saved in each folder of your markdown documents.
 
