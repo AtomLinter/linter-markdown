@@ -1,3 +1,10 @@
+## [5.2.7](https://github.com/AtomLinter/linter-markdown/compare/v5.2.6...v5.2.7) (2019-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency atom-package-deps to v5.1.0 ([1a78665](https://github.com/AtomLinter/linter-markdown/commit/1a78665))
+
 ## [5.2.6](https://github.com/AtomLinter/linter-markdown/compare/v5.2.5...v5.2.6) (2019-02-13)
 
 
