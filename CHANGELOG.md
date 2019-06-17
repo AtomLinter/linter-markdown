@@ -1,3 +1,10 @@
+## [5.2.8](https://github.com/AtomLinter/linter-markdown/compare/v5.2.7...v5.2.8) (2019-06-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency remark-frontmatter to v1.3.2 ([e2c81b4](https://github.com/AtomLinter/linter-markdown/commit/e2c81b4))
+
 ## [5.2.7](https://github.com/AtomLinter/linter-markdown/compare/v5.2.6...v5.2.7) (2019-04-22)
 
 
