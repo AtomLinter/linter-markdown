@@ -1,3 +1,11 @@
+## [5.2.10](https://github.com/AtomLinter/linter-markdown/compare/v5.2.9...v5.2.10) (2019-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency unified-engine-atom to v8 ([5fa0623](https://github.com/AtomLinter/linter-markdown/commit/5fa0623))
+* **deps:** update remark packages ([30b3339](https://github.com/AtomLinter/linter-markdown/commit/30b3339))
+
 ## [5.2.9](https://github.com/AtomLinter/linter-markdown/compare/v5.2.8...v5.2.9) (2019-06-20)
 
 
