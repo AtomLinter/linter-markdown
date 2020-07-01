@@ -26,7 +26,7 @@
     "linter"
   ],
   "dependencies": {
-    "atom-package-deps": "5.1.0",
+    "atom-package-deps": "6.0.0",
     "remark": "11.0.2",
     "remark-frontmatter": "1.3.2",
     "remark-preset-lint-consistent": "2.0.3",
