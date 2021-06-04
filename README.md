@@ -10,25 +10,63 @@
 [![Package version!](https://img.shields.io/apm/v/linter-markdown.svg?style=flat)](https://atom.io/packages/linter-markdown)
 
 Lint markdown files using [remark-lint][remark-lint] and the
-[linter][linter] package for atom.
+[linter][linter] package for Atom.
 
-If there is no configuration found for **remark-lint**, this linter runs [remark-preset-lint-consistent][consistent] and
-[remark-preset-lint-recommended][recommended] (both can be turned off).
-You can a also turn on [remark-preset-lint-markdown-style-guide][styleguide].
-By default, [YAML frontmatter][yaml] is supported, but you can turn that off.
+To use this `linter-markdown` package for Atom, simply install the package using
+the Atom package manager. If there is no configuration found for
+**remark-lint**, this linter runs [remark-preset-lint-consistent][consistent]
+and [remark-preset-lint-recommended][recommended] (both can be turned off). You
+can a also turn on [remark-preset-lint-markdown-style-guide][styleguide]. By
+default, [YAML frontmatter][yaml] is supported, but you can turn that off.
+
+## Standard Installation
 
 If there *is* configuration for **remark-lint**, through `.remarkrc` files
 or `remarkConfig` in `package.json`s, this linter works just like
 [remark-cli][cli].
 
-You should probably install modules referenced in `.remarkrc` files locally
-(`npm install` without the `-g` or `--global` flag). If you do install modules
-globally, you must either use [nvm][], or have
-a [`prefix` in your `.npmrc`][prefix].
+If you need a specific configuration for the package, there is 2 ways of installing this `linter-markdown` package: a system-wide way, and a folder-specific way.
 
-See [this tutorial][set-up] on how to set-up npm to work without sudo, which
-is good practise, and comes with the added benefit that `linter-markdown`
-can pick up on globally installed modules.
+## Project-specific Configuration
+
+The folder-specific way of configuring `remark` should be used if:
+* You are working on the project with other people
+* You need repeatable results
+* You use need a different configuration for each project
+
+You can set you folder-specific configuration in:
+* A `remarkConfig` section in `package.json`
+* A `.remarkrc.js` or `.remarkrc` file
+These should be placed in your project, see
+[remark configuration](https://github.com/unifiedjs/unified-engine/blob/master/doc/configure.md)
+for details.
+
+You then have to locally install all modules referenced in your `.remarkrc`
+file, alongside `remark` and `remark-cli` (`npm install` without the `-g` or
+`--global` flag).
+
+## Global Configuration
+
+The global configuration should only be used if you need to use the same
+configuration on all your Markdown documents, and they aren't contained within
+projects of their own.
+
+You can set you system-wide configuration in a `.remarkrc` file that should be
+saved in `~/.remarkrc`, at the root of your home directory.
+
+You then have to globally install all modules referenced in your `.remarkrc`
+file, alongside `remark` and `remark-cli` (`npm install` with the `-g` or
+`--global` flag).
+
+## More Information
+
+If there *is* configuration for **remark-lint**, through `.remarkrc` files or
+`remarkConfig` in `package.json`s, this linter works just like
+[remark-cli][cli].
+
+See [this tutorial][set-up] on how to set-up `npm` to work without `sudo`, which
+is good practice, and comes with the added benefit that `linter-markdown` can
+pick up on globally installed modules.
 
 Read more about configuring [remark-lint][configuration] on its README.
 
